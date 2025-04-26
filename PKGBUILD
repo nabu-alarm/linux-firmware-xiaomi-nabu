@@ -1,6 +1,6 @@
 pkgname=linux-firmware-xiaomi-nabu
 _commit="d15fc36a670ef186ca32cdbc3e940ab18bcc2505"
-pkgver=20252604
+pkgver=25.04.26
 pkgrel=1
 pkgdesc='Firmware for Xiaomi Pad 5'
 url='https://gitlab.postmarketos.org/panpanpanpan/nabu-firmware'
