@@ -1,13 +1,11 @@
 pkgname=linux-firmware-xiaomi-nabu
-_commit="b17a3ce0f08871f1c4553351b2f64b2c6969cd5c"
-pkgver=20241112
+_commit="d15fc36a670ef186ca32cdbc3e940ab18bcc2505"
+pkgver=20252604
 pkgrel=1
 pkgdesc='Firmware for Xiaomi Pad 5'
 url='https://gitlab.postmarketos.org/panpanpanpan/nabu-firmware'
 arch=(any)
 license=("proprietary")
-makedepends=(
-)
 options=(
   !debug
   !strip
@@ -15,18 +13,12 @@ options=(
 source=(
   "nabu-firmware-main.tar.gz::$url/-/archive/$_commit/nabu-firmware-main.tar.gz"
 )
-sha512sums=(
-  '4cff180e0c765dd8d7c9b643699a685ec1394dbbca6420ca21ae4da005320f9aaade033fa5a348111457c7a141b2abc1112abee06d9d6f14f573ed78344587ac'
+sha256sums=(
+  '0ebc6f597f892472cbe458078ecbceb92c5150cd8bb2d2d740d98d0c97e57a2e'
 )
 depends=(
   'linux-firmware'
 )
-optdepends=()
-provides=()
-conflicts=(
-)
-prepare=()
-build=()
 
 package() {
   builddir="$srcdir/nabu-firmware-$_commit"
